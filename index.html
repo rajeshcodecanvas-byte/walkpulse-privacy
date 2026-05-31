@@ -7,12 +7,7 @@
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.6; 
-            color: #e0e0e0; 
-            background-color: #121212; 
-            padding: 2rem; 
-            max-width: 800px; 
-            margin: 0 auto; 
+            line-height: 1.6; color: #e0e0e0; background-color: #121212; padding: 2rem; max-width: 800px; margin: 0 auto; 
         }
         h1, h2 { color: #ffffff; font-weight: 600; }
         h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
@@ -20,20 +15,8 @@
         a { color: #00e676; text-decoration: none; }
         a:hover { text-decoration: underline; }
         .highlight { color: #00e676; font-weight: bold; }
-        .contact-box {
-            background-color: #1e1e1e;
-            border-left: 4px solid #00e676;
-            padding: 15px;
-            margin-top: 20px;
-            border-radius: 4px;
-        }
-        footer { 
-            margin-top: 3rem; 
-            font-size: 0.9rem; 
-            text-align: center; 
-            border-top: 1px solid #333; 
-            padding-top: 20px; 
-        }
+        .contact-box { background-color: #1e1e1e; border-left: 4px solid #00e676; padding: 15px; margin-top: 20px; border-radius: 4px; }
+        footer { margin-top: 3rem; font-size: 0.9rem; text-align: center; border-top: 1px solid #333; padding-top: 20px; }
     </style>
 </head>
 <body>
@@ -41,32 +24,35 @@
     <h1>Privacy Policy</h1>
     <p><strong>Last Updated: May 2026</strong></p>
 
-    <p>Welcome to <strong>WalkPulse</strong>. We value your trust and prioritize your privacy above all else. This privacy statement outlines our strict adherence to data protection principles regarding your movement metrics.</p>
+    <p>Welcome to <strong>WalkPulse</strong>. We value your trust and prioritize your privacy above all else. WalkPulse is engineered to provide professional-grade step tracking with an absolute commitment to data sovereignty.</p>
 
-    <h2>1. Privacy-First Architecture & Data Collection</h2>
-    <p>WalkPulse functions as a <span class="highlight">Privacy-First, offline-only application</span>. We design our tracking systems to process data transparently:</p>
+    <h2>1. Privacy-First Architecture</h2>
+    <p>WalkPulse functions as a <span class="highlight">Privacy-First, 100% Offline application</span>. Our core philosophy is that your health data belongs to you, and only you.</p>
     <ul>
-        <li><strong>Physical Sensor Access:</strong> WalkPulse utilizes your device's built-in step counter sensor (<code>ACTIVITY_RECOGNITION</code>) to compute your metrics locally.</li>
-        <li><strong>Zero Cloud Syncing:</strong> No step counts, location metrics, or health data points are uploaded, synchronized, or monitored on external servers. All information remains locked safely inside your device's offline data structures.</li>
+        <li><strong>Physical Sensor Access:</strong> WalkPulse utilizes your device's built-in step counter hardware (<code>ACTIVITY_RECOGNITION</code>) to compute metrics. This processing happens entirely on-device.</li>
+        <li><strong>Zero Cloud Syncing:</strong> No step counts, historical charts, BMI calculations, or weight records are ever uploaded to external servers. We do not maintain any cloud databases or monitoring systems.</li>
     </ul>
 
-    <h2>2. Android Permissions Handled</h2>
-    <p>To deliver accurate real-time pedometer tracking, our application requests explicit runtime access to:</p>
+    <h2>2. Android Permissions & Transparency</h2>
+    <p>To comply with Google Play's standard for transparency, we disclose the following permission usages:</p>
     <ul>
-        <li><strong>Physical Activity Recognition:</strong> Required to query underlying step hardware metrics safely.</li>
-        <li><strong>Post Notifications:</strong> Vital to maintaining a transparent Android Foreground Service so you always know when tracking is live.</li>
+        <li><strong>Activity Recognition:</strong> Used to access hardware sensors for real-time step counting.</li>
+        <li><strong>Foreground Service (Health):</strong> Required to ensure accurate tracking continues while the app is in the background. A persistent notification is shown to maintain user awareness.</li>
+        <li><strong>Exact Alarms:</strong> Used specifically for the "Hydration Network" feature to trigger precise water intake reminders at user-defined intervals.</li>
+        <li><strong>Post Notifications:</strong> Used to display live tracking progress and hydration alerts.</li>
     </ul>
 
-    <h2>3. Third-Party Libraries & Services</h2>
-    <p>Our baseline application processes data natively. If any third-party frameworks or monetization SDKs are introduced in public updates, they operate in sandboxed runtimes and do not access personal device tracking data.</p>
+    <h2>3. Data Storage & Security</h2>
+    <p>All data (user profile, step history, weight records) is stored locally using secure Android internal storage. If you uninstall the application or use the "Factory Reset" feature within the app, all tracking data is permanently purged from your device.</p>
 
     <h2>4. Children's Privacy</h2>
-    <p>Because our application processes no personal data, it does not knowingly gather, store, or target identifiable tracking metrics from children under the age of 13.</p>
+    <p>WalkPulse does not knowingly collect or store any personally identifiable information (PII). It is safe for all users, including those under the age of 13, as no data leaves the physical device.</p>
 
-    <h2>5. Contact Us</h2>
-    <p>If you have any questions, feedback, or concerns about this privacy policy or the offline data architecture of WalkPulse, please contact us directly via email:</p>
+    <h2>5. Contact & Support</h2>
+    <p>For questions regarding this policy or the technical architecture of the app, contact the developer:</p>
     
     <div class="contact-box">
+        <p><strong>Developer:</strong> The CodeCanvas Studio</p>
         <p><strong>Email:</strong> <a href="mailto:rajesh.codecanvas@gmail.com">rajesh.codecanvas@gmail.com</a></p>
     </div>
 
