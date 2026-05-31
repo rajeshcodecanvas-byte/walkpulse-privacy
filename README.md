@@ -1,0 +1,1 @@
+# walkpulse-privacy
