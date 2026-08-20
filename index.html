@@ -3,104 +3,1031 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Privacy Policy - WalkPulse</title>
+
+    <meta name="description"
+          content="Privacy Policy for WalkPulse: Pedometer & Steps by The CodeCanvas Studio.">
+
+    <meta name="robots" content="index, follow">
+
     <style>
         :root {
-            --neon-emerald: #00e676;
-            --electric-cyan: #00e5ff;
-            --bg-dark: #0a0a0a;
-            --card-bg: #161616;
-            --text-main: #e0e0e0;
-            --text-muted: #9e9e9e;
+            --bg: #070a0a;
+            --surface: #101616;
+            --surface-alt: #151d1d;
+            --border: #293535;
+            --text: #f3f8f6;
+            --muted: #aab6b2;
+            --emerald: #00e676;
+            --cyan: #00e5ff;
+            --gold: #ffd166;
+            --danger: #ffb74d;
         }
-        body { 
-            font-family: 'Inter', -apple-system, system-ui, sans-serif; 
-            line-height: 1.7; color: var(--text-main); background-color: var(--bg-dark); 
-            padding: 2rem; max-width: 850px; margin: 0 auto; 
+
+        * {
+            box-sizing: border-box;
         }
-        h1, h2, h3 { color: #ffffff; font-weight: 700; letter-spacing: -0.5px; }
-        h1 { border-bottom: 2px solid #222; padding-bottom: 15px; font-size: 2.5rem; color: var(--neon-emerald); }
-        h2 { margin-top: 2.5rem; color: var(--electric-cyan); font-size: 1.4rem; text-transform: uppercase; letter-spacing: 1px; }
-        p, li { color: var(--text-muted); font-size: 1.05rem; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        a { color: var(--neon-emerald); text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
-        .highlight { color: #ffffff; font-weight: 600; }
-        .contact-box { 
-            background-color: var(--card-bg); border: 1px solid #333; 
-            padding: 25px; margin-top: 40px; border-radius: 16px; 
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+        html {
+            scroll-behavior: smooth;
         }
-        footer { 
-            margin-top: 4rem; font-size: 0.9rem; text-align: center; 
-            border-top: 1px solid #222; padding-top: 30px; color: var(--text-muted);
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background:
+                radial-gradient(
+                    circle at 90% 0%,
+                    rgba(0, 229, 255, 0.07),
+                    transparent 30%
+                ),
+                radial-gradient(
+                    circle at 0% 0%,
+                    rgba(0, 230, 118, 0.06),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            line-height: 1.75;
         }
-        .privacy-seal {
-            display: inline-block; padding: 10px 20px; border: 1px solid var(--neon-emerald);
-            color: var(--neon-emerald); border-radius: 8px; font-weight: bold; margin-bottom: 20px;
+
+        .container {
+            width: min(900px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 48px 0 70px;
+        }
+
+        .hero {
+            padding: 38px;
+            margin-bottom: 28px;
+            border: 1px solid var(--border);
+            border-radius: 24px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(0, 230, 118, 0.08),
+                    rgba(0, 229, 255, 0.045)
+                );
+        }
+
+        .privacy-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-bottom: 20px;
+
+            border: 1px solid rgba(0, 230, 118, 0.45);
+            border-radius: 999px;
+
+            background: rgba(0, 230, 118, 0.06);
+
+            color: var(--emerald);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.7px;
+        }
+
+        h1 {
+            margin: 0 0 10px;
+
+            color: var(--emerald);
+
+            font-size: clamp(2.3rem, 6vw, 3.5rem);
+            line-height: 1.1;
+            letter-spacing: -1.7px;
+        }
+
+        .app-name {
+            margin: 0;
+
+            color: var(--text);
+            font-size: 1.18rem;
+            font-weight: 600;
+        }
+
+        .effective-date {
+            margin-top: 18px;
+
+            color: var(--muted);
+            font-size: 0.94rem;
+        }
+
+        section {
+            margin-top: 28px;
+            padding: 29px;
+
+            border: 1px solid var(--border);
+            border-radius: 20px;
+
+            background: rgba(16, 22, 22, 0.92);
+        }
+
+        h2 {
+            margin: 0 0 16px;
+
+            color: var(--cyan);
+            font-size: 1.28rem;
+            line-height: 1.35;
+        }
+
+        h3 {
+            margin: 25px 0 9px;
+
+            color: var(--text);
+            font-size: 1rem;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+            font-size: 1rem;
+        }
+
+        p {
+            margin: 0 0 14px;
+        }
+
+        ul,
+        ol {
+            margin: 12px 0 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin-bottom: 9px;
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        a {
+            color: var(--emerald);
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .notice {
+            margin-top: 19px;
+            padding: 17px 19px;
+
+            border-left: 3px solid var(--cyan);
+            border-radius: 10px;
+
+            background: rgba(0, 229, 255, 0.045);
+        }
+
+        .notice p {
+            margin: 0;
+        }
+
+        .important {
+            margin-top: 19px;
+            padding: 17px 19px;
+
+            border-left: 3px solid var(--gold);
+            border-radius: 10px;
+
+            background: rgba(255, 209, 102, 0.045);
+        }
+
+        .important p {
+            margin: 0;
+        }
+
+        .contact {
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(0, 230, 118, 0.065),
+                    rgba(0, 229, 255, 0.04)
+                );
+        }
+
+        .contact-card {
+            margin-top: 18px;
+            padding: 20px;
+
+            border: 1px solid var(--border);
+            border-radius: 14px;
+
+            background: var(--surface-alt);
+        }
+
+        footer {
+            margin-top: 44px;
+            padding-top: 28px;
+
+            border-top: 1px solid var(--border);
+
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 0.88rem;
+        }
+
+        .updated {
+            color: var(--emerald);
+            font-weight: 700;
+        }
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: min(100% - 20px, 900px);
+                padding: 20px 0 45px;
+            }
+
+            .hero,
+            section {
+                padding: 22px;
+                border-radius: 17px;
+            }
+
+            h1 {
+                font-size: 2.25rem;
+            }
+
+            p,
+            li {
+                font-size: 0.96rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="privacy-seal">100% OFFLINE SERVICE • ZERO DATA COLLECTION</div>
-    
-    <h1>Privacy Policy</h1>
-    <p><strong>Effective Date: May 2026</strong></p>
+<div class="container">
 
-    <p>Welcome to <strong>WalkPulse</strong>, a professional-grade pedometer and health analytics engine. This Privacy Policy outlines our uncompromising commitment to your data sovereignty and privacy.</p>
+    <!-- HEADER -->
 
-    <h2>1. The Privacy-First Architecture</h2>
-    <p>WalkPulse is engineered as a <span class="highlight">100% Offline Application</span>. We believe that your health metrics are private and should never leave your physical device.</p>
-    <ul>
-        <li><strong>No Cloud Infrastructure:</strong> We do not operate servers, cloud databases, or external monitoring systems.</li>
-        <li><strong>Local Processing Only:</strong> All step calculations, BMI analysis, and hydration logs are processed and stored locally on your device.</li>
-        <li><strong>No Personal Identification:</strong> We do not require account creation, email registration, or social media logins.</li>
-    </ul>
+    <header class="hero">
 
-    <h2>2. Mandatory Permission Disclosures</h2>
-    <p>To provide high-fidelity tracking, WalkPulse requires specific Android permissions. We use these exclusively for local functionality:</p>
-    <ul>
-        <li><span class="highlight">ACTIVITY_RECOGNITION:</span> Accesses your device's hardware step-counter sensor to detect movement.</li>
-        <li><span class="highlight">FOREGROUND_SERVICE_HEALTH:</span> Enables the app to maintain tracking accuracy while in the background. A persistent notification is displayed to ensure user transparency.</li>
-        <li><span class="highlight">POST_NOTIFICATIONS:</span> Used to display your live step count and hydration alerts.</li>
-        <li><span class="highlight">SCHEDULE_EXACT_ALARM:</span> Powering the "Hydration Network" to trigger precise water intake reminders at your requested intervals.</li>
-    </ul>
+        <div class="privacy-badge">
+            🔒 LOCAL-FIRST PRIVACY
+        </div>
 
-    <h2>3. Data Collection & Usage</h2>
-    <p>While the app handles data, it does so in a "Blind" capacity. We handle the following categories of information solely within the app's local memory:</p>
-    <ul>
-        <li><strong>Physical Metrics:</strong> Height, Weight, and Gender (used to calculate BMI and Calorie expenditure).</li>
-        <li><strong>Activity Logs:</strong> Daily step counts, distance covered, and active minutes.</li>
-        <li><strong>Hydration Data:</strong> Timestamps of water intake and daily volume totals.</li>
-    </ul>
-    <p><em>*None of this data is transmitted to The CodeCanvas Studio or any third party.</em></p>
+        <h1>Privacy Policy</h1>
 
-    <h2>4. Data Retention & Deletion</h2>
-    <p>You have full control over your data. All records are stored in the app's private sandbox. If you wish to delete your data, you may:</p>
-    <ol>
-        <li>Use the <strong>"Factory Reset"</strong> feature within the app Settings to purge all local databases.</li>
-        <li>Uninstall the application, which triggers the Android OS to automatically delete all associated local storage.</li>
-    </ol>
+        <p class="app-name">
+            WalkPulse: Pedometer &amp; Steps
+        </p>
 
-    <h2>5. Children’s Privacy</h2>
-    <p>WalkPulse is compliant with the Children’s Online Privacy Protection Act (COPPA). Since the app collects <span class="highlight">Zero Personal Data</span> and has no online component, it is safe for use by individuals of all ages, including children under 13.</p>
+        <p class="effective-date">
+            <strong>Effective Date:</strong> August 20, 2026
+        </p>
 
-    <h2>6. Changes to This Policy</h2>
-    <p>As WalkPulse evolves, we may update this policy. However, our core philosophy—that your data stays on your device—will remain unchanged.</p>
+    </header>
 
-    <div class="contact-box">
-        <h3>Contact & Support</h3>
-        <p>If you have technical questions regarding the data architecture or privacy protocols of WalkPulse, please contact:</p>
-        <p><strong>Developer:</strong> The CodeCanvas Studio</p>
-        <p><strong>Email:</strong> <a href="mailto:rajesh.codecanvas@gmail.com" target="_blank">rajesh.codecanvas@gmail.com</a></p>
-    </div>
+
+    <main>
+
+        <!-- 1 -->
+
+        <section>
+            <h2>1. Introduction</h2>
+
+            <p>
+                Welcome to <strong>WalkPulse: Pedometer &amp; Steps</strong>,
+                a pedometer, activity tracking, fitness analytics and
+                hydration application developed by
+                <strong>The CodeCanvas Studio</strong>.
+            </p>
+
+            <p>
+                WalkPulse is designed around a local-first privacy approach.
+                The application does not require you to create a WalkPulse
+                account, register an email address, or sign in to use its
+                core tracking features.
+            </p>
+
+            <p>
+                This Privacy Policy explains what information WalkPulse
+                processes, how it is used, how it is stored, how Android
+                permissions are used, and how you can control or delete
+                information associated with the application.
+            </p>
+        </section>
+
+
+        <!-- 2 -->
+
+        <section>
+            <h2>2. Our Local-First Privacy Approach</h2>
+
+            <p>
+                WalkPulse is designed to process and store core activity,
+                fitness, hydration and application information locally on
+                your Android device whenever possible.
+            </p>
+
+            <ul>
+
+                <li>
+                    <strong>No WalkPulse account:</strong>
+                    WalkPulse does not require registration, login,
+                    or an email address for its core functionality.
+                </li>
+
+                <li>
+                    <strong>No WalkPulse cloud account:</strong>
+                    WalkPulse does not operate a personal cloud account
+                    where your activity history is uploaded for storage.
+                </li>
+
+                <li>
+                    <strong>Local processing:</strong>
+                    Core calculations such as step progress, distance,
+                    estimated calories, BMI and hydration progress are
+                    processed within the application.
+                </li>
+
+                <li>
+                    <strong>Local storage:</strong>
+                    WalkPulse uses Android application storage for
+                    applicable local records and settings.
+                </li>
+
+            </ul>
+
+            <div class="notice">
+
+                <p>
+                    <strong>Important:</strong>
+                    Optional integrations such as Google Health Connect
+                    and Wear OS synchronization can exchange supported
+                    information when you enable those features. These
+                    platform integrations are different from uploading
+                    your information to a WalkPulse-operated cloud server.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 3 -->
+
+        <section>
+            <h2>3. Information WalkPulse Processes</h2>
+
+            <p>
+                Depending on the features you use, WalkPulse may process
+                the following categories of information.
+            </p>
+
+
+            <h3>🚶 Activity Information</h3>
+
+            <ul>
+                <li>Step counts</li>
+                <li>Walking distance</li>
+                <li>Daily activity progress</li>
+                <li>Historical step records</li>
+                <li>Activity goals</li>
+                <li>Streak and achievement progress</li>
+            </ul>
+
+
+            <h3>⚖️ Fitness Profile Information</h3>
+
+            <ul>
+                <li>Height</li>
+                <li>Weight</li>
+                <li>Gender, when provided</li>
+                <li>Stride length</li>
+            </ul>
+
+            <p>
+                These values may be used to personalize calculations
+                such as BMI, estimated calorie expenditure and walking
+                distance.
+            </p>
+
+
+            <h3>💧 Hydration Information</h3>
+
+            <ul>
+                <li>Water intake amounts</li>
+                <li>Daily hydration goals</li>
+                <li>Water-entry timestamps</li>
+                <li>Hydration reminder preferences</li>
+            </ul>
+
+
+            <h3>⚙️ Application Preferences</h3>
+
+            <ul>
+                <li>Theme preferences</li>
+                <li>Activity goals</li>
+                <li>Notification preferences</li>
+                <li>Hydration reminder settings</li>
+                <li>Other settings required for application functionality</li>
+            </ul>
+
+        </section>
+
+
+        <!-- 4 -->
+
+        <section>
+            <h2>4. How WalkPulse Uses Information</h2>
+
+            <p>
+                WalkPulse uses information to provide the features that
+                you choose to use within the application.
+            </p>
+
+            <ul>
+
+                <li>Track and display daily steps</li>
+
+                <li>Calculate and display walking distance</li>
+
+                <li>Provide estimated calorie information</li>
+
+                <li>Display daily, weekly, monthly and yearly activity trends</li>
+
+                <li>Provide BMI calculations</li>
+
+                <li>Maintain local weight history</li>
+
+                <li>Track water intake and hydration progress</li>
+
+                <li>Schedule hydration reminders</li>
+
+                <li>Track goals, achievements and streaks</li>
+
+                <li>Synchronize supported step information with Wear OS</li>
+
+                <li>Read and write supported step information through
+                    Google Health Connect when authorized</li>
+
+                <li>Display step progress through the Android home-screen widget</li>
+
+            </ul>
+
+            <p>
+                WalkPulse does not use your health or activity information
+                for targeted advertising.
+            </p>
+
+        </section>
+
+
+        <!-- 5 -->
+
+        <section>
+            <h2>5. Step Tracking &amp; Background Operation</h2>
+
+            <p>
+                WalkPulse uses Android's
+                <strong>step counter sensor</strong> to track steps on
+                compatible devices.
+            </p>
+
+            <p>
+                The application can use a health-type foreground service
+                to maintain step tracking while the application is running
+                in the background. Android may display an ongoing notification
+                while this service is active.
+            </p>
+
+            <p>
+                WalkPulse does not require access to your contacts,
+                camera, microphone, or precise location for its core
+                pedometer functionality.
+            </p>
+
+            <div class="notice">
+
+                <p>
+                    Step-counting availability and accuracy can vary by
+                    device hardware, Android version, operating-system
+                    restrictions, battery-management settings and sensor
+                    behavior.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 6 -->
+
+        <section>
+            <h2>6. Android Permissions</h2>
+
+            <p>
+                WalkPulse requests Android permissions only for functionality
+                that requires them.
+            </p>
+
+
+            <h3>🏃 Activity Recognition</h3>
+
+            <p>
+                <strong>ACTIVITY_RECOGNITION</strong> is used to support
+                activity recognition and step-counting functionality on
+                supported Android versions.
+            </p>
+
+
+            <h3>🔄 Foreground Service</h3>
+
+            <p>
+                <strong>FOREGROUND_SERVICE</strong> and
+                <strong>FOREGROUND_SERVICE_HEALTH</strong> support the
+                health-related foreground service used for ongoing step
+                tracking when the application operates in the background.
+            </p>
+
+
+            <h3>🔔 Notifications</h3>
+
+            <p>
+                <strong>POST_NOTIFICATIONS</strong> is used to display
+                supported activity and hydration notifications on Android
+                versions that require notification permission.
+            </p>
+
+
+            <h3>⏰ Exact Alarms</h3>
+
+            <p>
+                <strong>SCHEDULE_EXACT_ALARM</strong> supports scheduled
+                hydration reminders when exact reminder timing is enabled
+                and permitted by Android.
+            </p>
+
+            <p>
+                Permission behavior can vary according to Android version,
+                device manufacturer and user-controlled system settings.
+            </p>
+
+        </section>
+
+
+        <!-- 7 -->
+
+        <section>
+            <h2>7. Google Health Connect</h2>
+
+            <p>
+                WalkPulse optionally integrates with
+                <strong>Android Health Connect</strong>.
+            </p>
+
+            <p>
+                Based on the permissions implemented by WalkPulse,
+                the application requests permission to
+                <strong>read and write step records</strong> through
+                Health Connect.
+            </p>
+
+            <h3>📖 Reading Step Data</h3>
+
+            <p>
+                When you grant permission, WalkPulse can read
+                <strong>StepsRecord</strong> information from Health Connect
+                for the relevant time period used by the application.
+            </p>
+
+            <p>
+                This allows WalkPulse to retrieve supported step information
+                and incorporate it into the application's activity experience.
+            </p>
+
+            <h3>✍️ Writing Step Data</h3>
+
+            <p>
+                WalkPulse requests permission to write
+                <strong>StepsRecord</strong> information to Health Connect.
+                This permission supports synchronization of supported step
+                information with the Android health ecosystem.
+            </p>
+
+            <h3>🔐 Health Connect Privacy</h3>
+
+            <p>
+                WalkPulse does not sell Health Connect data.
+            </p>
+
+            <p>
+                Health Connect information is used only to provide the
+                health and fitness functionality for which you grant
+                permission.
+            </p>
+
+            <p>
+                WalkPulse does not use Health Connect step information
+                for targeted advertising or unrelated purposes.
+            </p>
+
+            <h3>Managing Health Connect Permissions</h3>
+
+            <p>
+                You can review or revoke WalkPulse's Health Connect
+                permissions through Android Health Connect settings.
+                You can also manage or delete applicable Health Connect
+                records using the controls provided by Android.
+            </p>
+
+            <div class="important">
+
+                <p>
+                    Health Connect is a separate Android platform service.
+                    Information stored in Health Connect is governed by
+                    the controls and privacy practices applicable to
+                    Health Connect and other applications connected to it.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 8 -->
+
+        <section>
+            <h2>8. Wear OS Synchronization</h2>
+
+            <p>
+                WalkPulse includes optional Wear OS functionality for
+                compatible smartwatches.
+            </p>
+
+            <p>
+                The Wear OS component uses the Android Wearable Data Layer
+                to synchronize supported step information between the
+                smartwatch and the phone application.
+            </p>
+
+            <h3>⌚ Information Sent from the Watch</h3>
+
+            <p>
+                The Wear OS implementation sends:
+            </p>
+
+            <ul>
+                <li><strong>Step count</strong></li>
+                <li><strong>Timestamp associated with the step update</strong></li>
+            </ul>
+
+            <p>
+                The phone application receives the synchronized step count
+                and uses it to update the live activity display.
+            </p>
+
+            <p>
+                Wear OS synchronization is used only to provide the requested
+                cross-device activity-tracking functionality.
+            </p>
+
+            <p>
+                If you do not use the Wear OS functionality, the standard
+                phone-based tracking experience does not require watch
+                synchronization.
+            </p>
+
+        </section>
+
+
+        <!-- 9 -->
+
+        <section>
+            <h2>9. Local Database &amp; Storage</h2>
+
+            <p>
+                WalkPulse uses a local Android database to maintain applicable
+                activity and fitness history.
+            </p>
+
+            <p>
+                The application's local repository includes step-history
+                records and weight-history records used to provide historical
+                activity and fitness features.
+            </p>
+
+            <p>
+                This local information is used by WalkPulse to provide
+                features such as historical charts, progress tracking,
+                weight timelines and activity summaries.
+            </p>
+
+            <p>
+                WalkPulse does not require a WalkPulse-operated cloud database
+                to store this local application history.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+
+        <section>
+            <h2>10. Data Sharing &amp; Third-Party Services</h2>
+
+            <p>
+                WalkPulse does not operate a personal cloud service for
+                uploading and storing your activity history.
+            </p>
+
+            <p>
+                WalkPulse does not sell your health, fitness or activity
+                information.
+            </p>
+
+            <p>
+                WalkPulse may exchange supported information with Android
+                platform services and compatible devices when you explicitly
+                enable functionality such as Google Health Connect or
+                Wear OS synchronization.
+            </p>
+
+            <p>
+                These integrations are used to provide the corresponding
+                features and operate according to the permissions and
+                controls provided by Android and the connected platform.
+            </p>
+
+            <p>
+                Based on the application's current implementation,
+                WalkPulse does not include an advertising SDK or an
+                analytics service for collecting your activity data for
+                advertising or behavioral analytics.
+            </p>
+
+            <div class="notice">
+
+                <p>
+                    Third-party platform services such as Google Health Connect
+                    and Google Play services may process information according
+                    to their own terms and privacy practices. WalkPulse does
+                    not control the independent privacy practices of those
+                    platform services.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 11 -->
+
+        <section>
+            <h2>11. Data Retention</h2>
+
+            <p>
+                WalkPulse may retain locally stored information for as long
+                as needed to provide features such as historical step
+                tracking, weight history, hydration progress, goals,
+                achievements and activity analytics.
+            </p>
+
+            <p>
+                Because applicable WalkPulse records are stored locally,
+                they remain on your device until you delete them through
+                available in-app controls, clear the application's data,
+                or uninstall the application.
+            </p>
+
+            <p>
+                Information stored separately by Health Connect is controlled
+                separately through the Health Connect system.
+            </p>
+
+        </section>
+
+
+        <!-- 12 -->
+
+        <section>
+            <h2>12. Data Deletion</h2>
+
+            <h3>🗑️ WalkPulse Local Data</h3>
+
+            <p>
+                You can remove locally stored WalkPulse information using
+                the application's available reset or data-deletion controls.
+            </p>
+
+            <p>
+                You may also use Android's application settings to clear
+                WalkPulse application data or uninstall the application.
+                Android normally removes the application's private local
+                storage when the application is uninstalled.
+            </p>
+
+            <h3>🩺 Health Connect Data</h3>
+
+            <p>
+                Health Connect information is maintained separately by the
+                Health Connect platform. Revoking WalkPulse's permission
+                prevents further access according to the permission state,
+                while applicable Health Connect records can be managed or
+                deleted through Health Connect.
+            </p>
+
+            <div class="important">
+
+                <p>
+                    Removing WalkPulse's local application data does not
+                    automatically guarantee deletion of information that
+                    exists separately in Health Connect or another connected
+                    application.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- 13 -->
+
+        <section>
+            <h2>13. Security</h2>
+
+            <p>
+                WalkPulse is designed to minimize unnecessary transmission
+                of personal activity information.
+            </p>
+
+            <p>
+                Local application information benefits from Android's
+                application sandboxing, permission system and operating-system
+                security mechanisms.
+            </p>
+
+            <p>
+                WalkPulse release builds use code shrinking, optimization
+                and obfuscation to help protect the application code and
+                reduce unnecessary resources.
+            </p>
+
+            <p>
+                No electronic storage or transmission method can be guaranteed
+                to be completely secure. We therefore use reasonable technical
+                measures appropriate to the information handled by the
+                application.
+            </p>
+
+        </section>
+
+
+        <!-- 14 -->
+
+        <section>
+            <h2>14. Children's Privacy</h2>
+
+            <p>
+                WalkPulse does not require users to create an online account
+                or provide an email address to use its core functionality.
+            </p>
+
+            <p>
+                We do not knowingly request personal information from
+                children through account registration or online forms.
+            </p>
+
+            <p>
+                If you believe that personal information has been provided
+                to The CodeCanvas Studio through a channel we control and
+                should be reviewed or deleted, please contact us using the
+                information below.
+            </p>
+
+        </section>
+
+
+        <!-- 15 -->
+
+        <section>
+            <h2>15. Medical &amp; Fitness Disclaimer</h2>
+
+            <p>
+                WalkPulse is intended for general fitness, activity-tracking
+                and informational purposes.
+            </p>
+
+            <p>
+                Step counts, distance, calorie estimates, BMI calculations
+                and other measurements may vary depending on device hardware,
+                sensors, user-provided information, algorithms and other
+                factors.
+            </p>
+
+            <p>
+                WalkPulse is not a medical device and does not provide
+                medical diagnosis, treatment or professional medical advice.
+            </p>
+
+            <p>
+                Do not rely on WalkPulse information as a substitute for
+                advice from a qualified healthcare professional.
+            </p>
+
+        </section>
+
+
+        <!-- 16 -->
+
+        <section>
+            <h2>16. Changes to This Privacy Policy</h2>
+
+            <p>
+                We may update this Privacy Policy when WalkPulse's features,
+                technology, legal requirements or privacy practices change.
+            </p>
+
+            <p>
+                When material changes are made, the effective date at the
+                beginning of this policy will be updated.
+            </p>
+
+            <p>
+                We encourage users to periodically review this Privacy Policy
+                to remain informed about how WalkPulse handles information.
+            </p>
+
+        </section>
+
+
+        <!-- 17 -->
+
+        <section class="contact">
+            <h2>17. Contact &amp; Support</h2>
+
+            <p>
+                If you have questions, concerns or requests regarding this
+                Privacy Policy or WalkPulse's privacy practices, please
+                contact us.
+            </p>
+
+            <div class="contact-card">
+
+                <p>
+                    <strong>Developer:</strong><br>
+                    The CodeCanvas Studio
+                </p>
+
+                <p>
+                    <strong>Application:</strong><br>
+                    WalkPulse: Pedometer &amp; Steps
+                </p>
+
+                <p>
+                    <strong>Email:</strong><br>
+                    <a href="mailto:rajesh.codecanvas@gmail.com">
+                        rajesh.codecanvas@gmail.com
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
 
     <footer>
-        <p>Built with <strong>The CodeCanvas Studio</strong></p>
-        <p>&copy; 2026 WalkPulse. All Rights Reserved.</p>
+
+        <p class="updated">
+            Last Updated: August 20, 2026
+        </p>
+
+        <p>
+            © 2026 WalkPulse. All Rights Reserved.
+        </p>
+
+        <p>
+            Built by <strong>The CodeCanvas Studio</strong>
+        </p>
+
     </footer>
+
+</div>
 
 </body>
 </html>
